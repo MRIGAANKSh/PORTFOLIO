@@ -36,3 +36,13 @@ li a:hover{
     color: rgb(43, 226, 43);
 
 }
+.imagebanner img{
+  width: 100vw;
+  height:500px;
+}
+/*.sep{
+  width:100vw;
+  height: 40px;
+  background-color:black;
+  border: 2px solid black;
+}/
