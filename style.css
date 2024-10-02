@@ -1,41 +1,792 @@
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "General Sans", sans-serif;
 }
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
+
+body {
+  background-color: black;
+  color: white;
 }
-.navbar {
-  background-color: rgb(252, 13, 52);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+/* Minicircle */
+#minicircle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  z-index: 9999999;
+  border-radius: 50%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.75s;
 }
-.navdiv {
+
+/* Main Section */
+#main {
+  width: 100%;
+  background-color: black;
+  height: auto;
+}
+
+/* Home Section */
+#home {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+  background-color: black;
+}
+
+#nav {
+  width: 100%;
   display: flex;
   align-items: center;
-  height: 43px;
   justify-content: space-between;
+  padding: 20px 40px;
+  color: white;
 }
-.logo a {
-  font-size: larger;
-  font-weight: 400;
-  margin-left: 47px;
-  color: beige;
-  font-family: cursive;
+
+#nav a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
 }
-li a {
-  color: whitesmoke;
-  padding-left: 5px;
-  padding-right: 15px;
-  font-size: bold;
-  font-weight: 300;
-  margin-right: 20px;
+
+.bound {
+  width: fit-content;
+  overflow: hidden;
 }
-li a:hover {
-  color: rgb(43, 226, 43);
+
+.bound .boundelem {
+  transform: translateY(110%);
 }
-.imagebanner img {
-  width: 100vw;
-  height: 500px;
+
+#heading {
+  margin-top: 70px;
+}
+
+#heading h1 {
+  line-height: 1;
+  font-size: 9vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0.7;
+  margin-left: 50px;
+}
+
+#heading #second {
+  margin-left: 230px;
+}
+
+.text {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.text h4 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#mheading {
+  text-transform: uppercase;
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#mheading h5 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 0.5vw;
+  text-align: right;
+  font-size: 1.2vw;
+}
+
+/* Home Footer */
+#homefooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: -2%;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#homefooter a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#homefooter .cricle {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+#homefooter #iconset {
+  display: flex;
+  gap: 5px;
+}
+
+/* Content Section */
+#content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 200px 10vw 0 3vw;
+  color: white;
+}
+
+#content .elem,
+.elem1 {
+  width: 100%;
+  border-top: 1px solid grey;
+  padding: 4vw 3vw;
+  position: relative;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+#content .elem h1,
+.elem1 h1 {
+  text-transform: uppercase;
+  font-size: 8vw;
+  opacity: 0.7;
+  word-break: break-word; /* Allow text to wrap */
+}
+
+.elemlast {
+  border-bottom: 1px solid grey;
+}
+
+.elem img,
+.elem1 img {
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.alink {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff; /* Changed to white for better visibility on black background */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.alink i {
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.alink:hover i {
+  transform: rotate(90deg); /* Rotate icon to simulate side arrow */
+}
+
+.alink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #fffdfd; /* Customize the underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.alink:hover::after {
+  width: 100%;
+}
+
+/* About Section */
+#about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  padding: 10vw 5vw;
+  color: white;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  padding-top: 100vh;
+  padding-left: 12vw;
+  justify-content: center;
+}
+
+#about img {
+  width: 15vw;
+  max-width: 200px; /* Ensure image doesn't get too large */
+  filter: grayscale(100%);
+  border-radius: 50%;
+}
+
+#textabout {
+  width: 30rem;
+  height: 17rem; /* Changed height */
+  overflow: hidden; /* Prevent scrollbars */
+  padding: 0 10px; /* Added padding to prevent text overflow */
+}
+
+#textabout h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Adjusted font size for better readability */
+}
+
+#textabout p {
+  line-height: 1.7;
+  margin-bottom: 20px; /* Reduced margin */
+  font-size: 0.9em; /* Reduced font size for better fit */
+}
+
+#textabout a {
+  text-decoration: none;
+  padding: 10px 20px; /* Adjusted padding */
+  border: 1px solid #FFF;
+  color: wheat;
+  font-size: 14px; /* Adjusted font size */
+}
+
+#follow {
+  color: white;
+  padding: 20px 30px;
+  background-color: black;
+  padding-top: 20vh;
+}
+
+#follow h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+#follow h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px;
+  color: white;
+  width: 100%;
+  position: relative; /* Changed from fixed to relative to avoid overlap */
+}
+
+#footer #left,
+#footer #right {
+  display: flex;
+  gap: 30px; /* Reduced gap for smaller screens */
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Responsive Styles */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1440px) {
+  #heading h1 {
+    font-size: 8vw;
+  }
+
+  #heading #second {
+    margin-left: 180px;
+  }
+
+  #content {
+    padding: 180px 9vw 0 2.5vw;
+  }
+
+  #content .elem,
+  .elem1 {
+    padding: 3.5vw 2.5vw;
+  }
+}
+
+/* Tablets and Small Desktops */
+@media (max-width: 1024px) {
+  #nav {
+    padding: 15px 30px;
+  }
+
+  #heading h1 {
+    font-size: 10vw;
+    margin-left: 20px;
+  }
+
+  #heading #second {
+    margin-left: 100px;
+  }
+
+  .text h4 {
+    font-size: 18px;
+  }
+
+  #mheading {
+    padding: 30px;
+  }
+
+  #mheading h5 {
+    font-size: 1.5vw;
+  }
+
+  #homefooter {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #content {
+    padding: 150px 8vw 0 2vw;
+    margin-bottom: 20px; /* Added margin to control space */
+  }
+
+  #content .elem,
+  .elem1 {
+    padding: 3vw 2vw;
+  }
+
+  #content .elem h1,
+  .elem1 h1 {
+    font-size: 10vw;
+  }
+
+  #about {
+    flex-direction: column;
+    padding-top: 50vh;
+    padding-left: 5vw;
+    gap: 30px; /* Reduced from 50px */
+  }
+
+  #textabout {
+    width: 100%;
+  }
+
+  #footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  #footer #left,
+  #footer #right {
+    gap: 20px;
+  }
+
+  /* Ensure no horizontal overflow */
+  body, html {
+    overflow-x: hidden;
+  }
+}
+
+/* iPad Pro and Similar Devices */
+@media (max-width: 1366px) and (min-width: 1025px) {
+  /* Specific styles for iPad Pro (1366px width) */
+  #heading h1 {
+    font-size: 9vw;
+  }
+
+  #about {
+    padding-left: 10vw;
+  }
+}
+
+/* iPhones and Small Tablets */
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav a {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #heading h1 {
+    font-size: 12vw;
+    margin-left: 10px;
+  }
+
+  #heading #second {
+    margin-left: 50px;
+  }
+
+  #content {
+    padding: 100px 5vw 0 2vw;
+    margin-bottom: 20px; /* Reduced space */
+  }
+
+  #content .elem,
+  .elem1 {
+    padding: 2vw 1.5vw;
+  }
+
+  #content .elem h1,
+  .elem1 h1 {
+    font-size: 14vw;
+  }
+
+  #about {
+    flex-direction: column;
+    padding-top: 30vh;
+    padding-left: 5vw;
+    gap: 30px; /* Reduced from 50px */
+  }
+
+  #about img {
+    width: 30vw;
+    max-width: 150px;
+  }
+
+  #textabout {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0 10px; /* Added padding to prevent text overflow */
+  }
+
+  #textabout h5 {
+    font-size: 1.2em; /* Adjusted font size for better readability */
+  }
+
+  #textabout p {
+    font-size: 0.9em; /* Reduced font size for better fit */
+    margin-bottom: 20px; /* Reduced margin */
+  }
+
+  #textabout a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer #left,
+  #footer #right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .alink {
+    color: #fff;
+  }
+
+  /* Adjust #elem1 h1 for better visibility */
+  .elem1 h1 {
+    font-size: 14vw; /* Ensure it's visible without overflow */
+    word-break: break-word; /* Allow text to wrap if necessary */
+  }
+}
+
+/* Portrait iPhones (iPhone SE, 12, 12 Pro Max, etc.) */
+@media (max-width: 480px) {
+  #nav {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav a {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #heading h1 {
+    font-size: 16vw;
+    margin-left: 5px;
+  }
+
+  #heading #second {
+    margin-left: 20px;
+  }
+
+  .text h4 {
+    font-size: 16px;
+  }
+
+  #mheading {
+    padding: 20px;
+  }
+
+  #mheading h5 {
+    font-size: 2vw;
+  }
+
+  #homefooter {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #content {
+    padding: 80px 4vw 0 2vw;
+    margin-bottom: 20px; /* Reduced space */
+  }
+
+  #content .elem,
+  .elem1 {
+    padding: 1.5vw 1vw;
+  }
+
+  #content .elem h1,
+  .elem1 h1 {
+    font-size: 15vw; /* Adjusted to prevent overflow */
+    word-break: break-word; /* Ensure text wraps */
+  }
+
+  #about {
+    padding-top: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw; /* Added padding-right for balance */
+    gap: 30px; /* Reduced from 50px */
+  }
+
+  #about img {
+    width: 40vw;
+    max-width: 120px;
+  }
+
+  #textabout {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px; /* Added padding to prevent overflow */
+    height: auto; /* Removed fixed height for better flexibility */
+  }
+
+  #textabout h5 {
+    font-size: 1.2em; /* Adjusted font size */
+  }
+
+  #textabout p {
+    font-size: 0.9em; /* Reduced font size for better fit */
+    margin-bottom: 20px; /* Reduced margin */
+  }
+
+  #textabout a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #follow {
+    padding: 10px 20px;
+  }
+
+  #follow h3 {
+    font-size: 12px;
+  }
+
+  #footer {
+    padding: 20px 15px; /* Further reduced padding */
+  }
+
+  #footer #left,
+  #footer #right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #footer a {
+    font-size: 14px;
+  }
+
+  /* Additional Adjustments for Mobile */
+
+  /* Reduce text size in #content */
+  #content h1 {
+    font-size: 15vw; /* Adjusted within the existing rule */
+  }
+
+  /* Reduce padding between sections */
+  #heading {
+    margin-top: 50px; /* Reduced from 70px */
+  }
+
+  #about {
+    padding: 10vw 5vw; /* Adjusted from 10vw to fit mobile better */
+    gap: 30px; /* Reduced from 50px */
+  }
+
+  #content {
+    padding: 80px 4vw 0 2vw; /* Reduced from 200px to 80px top padding */
+  }
+
+  #footer {
+    padding: 20px 15px; /* Further reduced padding */
+  }
+}
+
+/* Landscape iPhones */
+@media (max-width: 812px) and (orientation: landscape) {
+  #heading h1 {
+    font-size: 10vw;
+  }
+
+  #content .elem h1,
+  .elem1 h1 {
+    font-size: 12vw;
+  }
+
+  #about img {
+    width: 35vw;
+    max-width: 140px;
+  }
+
+  #heading {
+    margin-top: 50px;
+  }
+
+  #content {
+    padding: 120px 6vw 0 2vw;
+    margin-bottom: 20px; /* Reduced space */
+  }
+
+  .elem1 h1 {
+    font-size: 12vw; /* Adjusted for landscape */
+    word-break: break-word;
+  }
+
+  #textabout {
+    padding: 0 10px; /* Added padding */
+  }
+}
+
+/* iPhone 12 Pro Max (specific adjustment if needed) */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+  #heading h1 {
+    font-size: 15vw;
+  }
+
+  #content .elem h1,
+  .elem1 h1 {
+    font-size: 18vw; /* Reduced from 20vw to 18vw */
+    word-break: break-word; /* Ensure text wraps */
+  }
+
+  #about img {
+    width: 45vw;
+    max-width: 160px;
+  }
+
+  /* Additional Adjustments for Mobile */
+  #content {
+    padding: 80px 4vw 0 2vw; /* Reduced from 100px to 80px top padding */
+    margin-bottom: 20px; /* Reduced space */
+  }
+
+  #content .elem,
+  .elem1 {
+    padding: 1.5vw 1vw; /* Reduced from 2vw 1.5vw */
+  }
+
+  #content .elem h1,
+  .elem1 h1 {
+    font-size: 15vw; /* Further reduced to 18vw */
+    word-break: break-word; /* Ensure text wraps */
+  }
+
+  #about {
+    padding-top: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw; /* Added padding-right for balance */
+    gap: 30px; /* Reduced from 50px */
+  }
+
+  #heading {
+    margin-top: 50px; /* Reduced from 70px */
+  }
+
+  #about {
+    padding: 10vw 5vw; /* Reduced from 10vw 5vw */
+    gap: 30px; /* Reduced from 50px */
+  }
+
+  #footer {
+    padding: 20px 15px; /* Further reduced padding */
+  }
+
+  /* Ensure no horizontal overflow */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Adjust #textabout */
+  #textabout {
+    padding: 0 10px; /* Added padding to prevent overflow */
+    height: auto; /* Removed fixed height for better flexibility */
+  }
+
+  #textabout h5 {
+    font-size: 1.2em; /* Adjusted font size */
+  }
+
+  #textabout p {
+    font-size: 0.9em; /* Reduced font size for better fit */
+    margin-bottom: 20px; /* Reduced margin */
+  }
+
+  #textabout a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* General Fixes to Prevent Scrollbars */
+
+/* Ensure no element exceeds the viewport width */
+body, html {
+  overflow-x: hidden;
+}
+
+#content, #about, #footer {
+  max-width: 100%;
+}
+
+/* Prevent images from causing overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure text wraps appropriately */
+h1, h5, h3, p, a {
+  word-wrap: break-word;
+}
+
+/* Remove scrollbars for #elem1 and #textabout */
+.elem1, #textabout {
+  overflow: hidden;
 }

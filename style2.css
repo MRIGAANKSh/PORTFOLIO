@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+    #nav {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    #nav a {
+      font-size: 16px;
+    }
+  }
