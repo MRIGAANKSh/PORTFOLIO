@@ -97,22 +97,19 @@ document.querySelectorAll(".elem").forEach(function (elem) {
   });
 });
 
-// Function to show the alert and then trigger the download
 document.getElementById('downloadBtn').addEventListener('click', function () {
-  // Show an alert box informing the user that the download will start
-  const downloadMessage = "Mrigaank Resume will be Shown now.";
+  // Show an alert box informing the user that the resume will be shown
+  const downloadMessage = "Mrigaank Resume will be shown now.";
   
   // Show alert with the message
   alert(downloadMessage);
 
-  // After the user clicks OK on the alert, start the download
+  // After the user clicks OK on the alert, open the resume URL in a new tab
   setTimeout(function () {
-    // Path to the resume file (change this to your actual file path)
-    const resumeUrl = 'https://github.com/MRIGAANKSh/PORTFOLIO/blob/8d9bfe47e1d22ccc58c2371b2090a323d6e4440b/Mrigaank%20Sharma.pdf'
-    // Create a temporary <a> element to trigger the download
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-     // The filename for the downloaded file
-    link.click(); // Programmatically click the link to start the download
-  }, 500); // Wait for the alert to be dismissed before triggering the download
+    // URL to the raw resume file (modified for raw GitHub file access)
+    const resumeUrl = 'https://raw.githubusercontent.com/MRIGAANKSh/PORTFOLIO/8d9bfe47e1d22ccc58c2371b2090a323d6e4440b/Mrigaank%20Sharma.pdf';
+    
+    // Open the resume in a new tab
+    window.open(resumeUrl, '_blank');
+  }, 500); // Wait for the alert to be dismissed before opening the URL
 });
