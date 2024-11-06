@@ -100,7 +100,7 @@ document.querySelectorAll(".elem").forEach(function (elem) {
 // Function to show the alert and then trigger the download
 document.getElementById('downloadBtn').addEventListener('click', function () {
   // Show an alert box informing the user that the download will start
-  const downloadMessage = "Your resume will begin downloading now.";
+  const downloadMessage = "Mrigaank resume will be Shown now.";
   
   // Show alert with the message
   alert(downloadMessage);
@@ -108,7 +108,7 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
   // After the user clicks OK on the alert, start the download
   setTimeout(function () {
     // Path to the resume file (change this to your actual file path)
-    const resumeUrl = 'PORTFOLIO/Mrigaank Sharma.pdf';  // Change this to the correct path to your file
+    const resumeUrl = 'https://github.com/MRIGAANKSh/PORTFOLIO/blob/8d9bfe47e1d22ccc58c2371b2090a323d6e4440b/Mrigaank%20Sharma.pdf';  // Change this to the correct path to your file
 
     // Create a temporary <a> element to trigger the download
     const link = document.createElement('a');
