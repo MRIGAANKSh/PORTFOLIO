@@ -96,3 +96,24 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
   });
 });
+
+// Function to show the alert and then trigger the download
+document.getElementById('downloadBtn').addEventListener('click', function () {
+  // Show an alert box informing the user that the download will start
+  const downloadMessage = "Your resume will begin downloading now.";
+  
+  // Show alert with the message
+  alert(downloadMessage);
+
+  // After the user clicks OK on the alert, start the download
+  setTimeout(function () {
+    // Path to the resume file (change this to your actual file path)
+    const resumeUrl = 'PORTFOLIO/Mrigaank Sharma.pdf';  // Change this to the correct path to your file
+
+    // Create a temporary <a> element to trigger the download
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Mrigaank_Sharma_Resume.pdf'; // The filename for the downloaded file
+    link.click(); // Programmatically click the link to start the download
+  }, 500); // Wait for the alert to be dismissed before triggering the download
+});
