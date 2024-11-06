@@ -112,7 +112,7 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
     // Create a temporary <a> element to trigger the download
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Mrigaank_Sharma_Resume.pdf'; // The filename for the downloaded file
+     // The filename for the downloaded file
     link.click(); // Programmatically click the link to start the download
   }, 500); // Wait for the alert to be dismissed before triggering the download
 });
