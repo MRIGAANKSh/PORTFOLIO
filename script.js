@@ -108,7 +108,7 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
   // After the user clicks OK on the alert, start the download
   setTimeout(function () {
     // Path to the resume file (change this to your actual file path)
-    const resumeUrl = 'PORTFOLIO/Mrigaank Sharma.pdf'
+    const resumeUrl = 'https://github.com/MRIGAANKSh/PORTFOLIO/blob/8d9bfe47e1d22ccc58c2371b2090a323d6e4440b/Mrigaank%20Sharma.pdf'
     // Create a temporary <a> element to trigger the download
     const link = document.createElement('a');
     link.href = resumeUrl;
