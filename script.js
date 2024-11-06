@@ -100,7 +100,7 @@ document.querySelectorAll(".elem").forEach(function (elem) {
 // Function to show the alert and then trigger the download
 document.getElementById('downloadBtn').addEventListener('click', function () {
   // Show an alert box informing the user that the download will start
-  const downloadMessage = "Mrigaank resume will be Shown now.";
+  const downloadMessage = "Mrigaank Resume will be Shown now.";
   
   // Show alert with the message
   alert(downloadMessage);
