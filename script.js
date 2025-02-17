@@ -107,7 +107,7 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
   // After the user clicks OK on the alert, open the resume URL in a new tab
   setTimeout(function () {
     // URL to the raw resume file (modified for raw GitHub file access)
-    const resumeUrl = 'https://raw.githubusercontent.com/MRIGAANKSh/PORTFOLIO/8d9bfe47e1d22ccc58c2371b2090a323d6e4440b/Mrigaank%20Sharma.pdf';
+    const resumeUrl = 'https://github.com/MRIGAANKSh/PORTFOLIO/blob/main/Mrigaank%20Resume%202025.pdf';
     
     // Open the resume in a new tab
     window.open(resumeUrl, '_blank');
