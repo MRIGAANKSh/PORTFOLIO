@@ -1,13 +1,13 @@
 import PageLoader from "@/components/PageLoader";
-import HeroSection from "@/components/HeroSection";
+import Home from "@/pages/Home";
 
 export default function Page() {
   return (
-    <main className="relative bg-black">   {/* <<< FIX HERE */}
+    <main className="relative bg-black">
       <PageLoader />
 
-      {/* Hero Section will appear after the loader */}
-      <HeroSection />
+      {/* After loader, render the full Home layout */}
+      <Home />
     </main>
   );
 }
