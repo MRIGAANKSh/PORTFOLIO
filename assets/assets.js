@@ -79,27 +79,32 @@ export const assets = {
 };
 
 export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+  {
+    title: 'Frontend project',
+    description: 'Web Design',
+    bgImage: '/work-1.png',
+    link: 'https://web-dev-prac.vercel.app/'
+  },
+  {
+    title: 'Geo based app',
+    description: 'Mobile App',
+    bgImage: '/work-2.png',
+    link: 'https://your-geo-app-link.com'
+  },
+  {
+    title: 'Interview Site..',
+    description: 'Web Design',
+    bgImage: '/work-3.png',
+    link: 'https://hiringminds-ai-iota.vercel.app/'
+  },
+  {
+    title: 'UI/UX designing',
+    description: 'UI/UX Design',
+    bgImage: '/work-4.png',
+    link: 'https://carify-sigma.vercel.app/'
+  },
 ]
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },

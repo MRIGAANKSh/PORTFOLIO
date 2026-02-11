@@ -45,12 +45,10 @@ ${scroll ? "bg-white/30 backdrop-blur-xl shadow-sm" : ""} `}>
 
         {/* Logo */}
         <a href="#top" className="font-outfit">
-          <Image
-            src={assets.logo}
-            alt="logo"
-            className="w-28 cursor-pointer mr-14"
-            priority
-          />
+         <p className="text-center text-xl font-semibold mb-2">
+  Mrigaank Sharma
+</p>
+
         </a>
 
         {/* Desktop Menu */}
@@ -84,9 +82,9 @@ ${scroll ? "bg-white/30 backdrop-blur-xl shadow-sm" : ""} `}>
 
         {/* CTA Button */}
         <div className="flex items-center gap-4">
-          <button>
+          {/* <button>
             <Image src={assets.moon_icon} alt="darkmode" className="w-6" />
-          </button>
+          </button> */}
 
           <a
             href="#contact"
