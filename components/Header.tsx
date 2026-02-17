@@ -63,7 +63,7 @@ function Header() {
 
         <motion.a
         initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:0.6,delay:1}}
-          href="/Mrigaank Resume 2025 2.pdf"
+          href="/mrigaank resume.pdf"
           download
           className="
             px-10 py-3 
