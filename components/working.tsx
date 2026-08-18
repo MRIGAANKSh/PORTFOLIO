@@ -15,8 +15,9 @@ interface RoleDetails {
   type: string;
   period: string;
   bullets: string[];
-  icon?: React.ComponentType<{ className?: string }>;
+  icon?: React.ElementType;
 }
+
 
 const experienceData: RoleDetails[] = [
   {
@@ -33,18 +34,18 @@ const experienceData: RoleDetails[] = [
     icon: LyseibugIcon,
   },
   {
-  company: "Freelancer",
-  title: "Software Developer",
-  location: "India",
-  type: "Remote",
-  period: "May 2025 – May 2026",
-  bullets: [
-    "Developed and maintained full-stack web applications using modern frontend and backend technologies.",
-    "Built RESTful APIs and integrated frontend interfaces to deliver reliable and responsive application workflows.",
-    "Collaborated on application architecture, debugging, performance optimization, and feature development across the software lifecycle.",
-  ],
-  icon: BriefcaseBusiness,
-},
+    company: "Freelancer",
+    title: "Software Developer",
+    location: "India",
+    type: "Remote",
+    period: "May 2025 – May 2026",
+    bullets: [
+      "Developed and maintained full-stack web applications using modern frontend and backend technologies.",
+      "Built RESTful APIs and integrated frontend interfaces to deliver reliable and responsive application workflows.",
+      "Collaborated on application architecture, debugging, performance optimization, and feature development across the software lifecycle.",
+    ],
+    icon: BriefcaseBusiness,
+  },
 ];
 
 
