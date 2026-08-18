@@ -1,9 +1,8 @@
+"use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, BriefcaseBusiness } from "lucide-react";
-import { TaystAIIcon } from "@/components/icons/tayst-ai";
-import { PortalsIcon } from "@/components/icons/portals";
-import { RosterProIcon } from "@/components/icons/roster-pro";
 import { LyseibugIcon } from "./icons/lyseibug";
 
 interface RoleDetails {
