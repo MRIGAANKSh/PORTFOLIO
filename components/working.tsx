@@ -16,7 +16,7 @@ interface RoleDetails {
 }
 
 
-const experienceData: RoleDetails[] = [
+const experienceData= [
   {
     company: "Lyseibug",
     title: "Full Stack Developer Intern",
