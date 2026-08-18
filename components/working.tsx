@@ -44,7 +44,7 @@ const experienceData: RoleDetails[] = [
     "Collaborated on application architecture, debugging, performance optimization, and feature development across the software lifecycle.",
   ],
   icon: BriefcaseBusiness,
-},,
+},
 ];
 
 
