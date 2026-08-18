@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.rahul.eu.org/sitemap.xml
+
+# LLM-specific
+Allow: /llm.txt

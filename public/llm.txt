@@ -1,0 +1,120 @@
+# Rahul Rajput (r2hu1) - Fullstack Engineer
+
+> Plain-text snapshot of the portfolio at https://www.rahul.eu.org/ for AI agents, LLMs, and search engines. Canonical name: Rahul Rajput. GitHub handle: r2hu1.
+
+## Quick Facts
+
+- **Name:** Rahul Rajput
+- **Title:** Fullstack Software Engineer
+- **Base:** India, Mumbai
+- **Experience:** Founding Engineer & Co-Founder at RosterPro; ex-Tech Lead / Founding Engineer at Tayst AI (US); ex-Frontend Developer at Portals (London, UK)
+- **Projects built:** 80+
+- **Email:** rrahulrajput2006@gmail.com
+- **Phone:** +918108068981
+- **Portfolio:** https://www.rahul.eu.org/
+- **Resume (PDF):** https://www.rahul.eu.org/resume.pdf
+- **GitHub:** https://github.com/r2hu1
+- **LinkedIn:** https://linkedin.com/in/r2hu1
+- **Twitter / X:** https://twitter.com/r2hu1
+- **Instagram:** https://instagram.com/r.rah_ul
+- **Discord:** https://discord.com/users/1088811769977384971
+
+## About
+
+I'm a software engineer who enjoys building things from scratch. I've worked with startups, built products for clients, and spent years creating my own projects. Most of my time is spent building products, contributing to open source, and experimenting with new ideas. I've built 50+ projects ranging from AI tools and SaaS products to developer tools and automation software, and my open-source work has earned hundreds of GitHub stars.
+
+When I'm not working, I'm usually shipping another side project or contributing to projects I use myself.
+
+## Professional Experience
+
+### RosterPro (Mumbai, India)
+**Founding Engineer & Co-Founder** (May 2026 - Present)
+- Architected a type-safe, full-stack monorepo powering multiple web applications, backend services, APIs, and shared packages.
+- Engineered scalable backend infrastructure covering authentication, payments, real-time event streaming, caching, media management, and secure QR-based ordering workflows.
+- Established end-to-end type safety with shared API contracts, reusable UI components, and schema-first development workflows.
+- Drove technical architecture, infrastructure, and product development with a focus on scalability, performance, reliability, and developer experience.
+
+### Tayst AI (New York, NY - Remote)
+**Software Engineer (Tech Lead)** (Dec 2025 - May 2026)
+- Led architecture and delivery of the company's backend, frontend, and microservices stack; ensured reliability and horizontal scalability across production.
+- Defined engineering standards, reviewed PRs, mentored junior contributors, and drove type-safe API patterns to reduce runtime errors.
+- Coordinated with US-based stakeholders to turn product requirements into technical roadmaps and shipped on aggressive timelines.
+- Owned deployment pipelines and infrastructure on Vercel and serverless environments, maintaining high uptime for paying customers.
+
+**Founding Engineer** (Sept 2025 - Nov 2025)
+- Joined as a founding engineer and built the company's scalable backend and microservices infrastructure from the ground up.
+- Built frontend in Next.js and React, delivering core product UI flows and integrating backend APIs.
+- Established database schema, authentication flows, and API contracts early in the product lifecycle.
+
+### Portals (London, UK - Remote)
+**Frontend Developer** (Mar 2025 - Jun 2025)
+- Built and maintained all dynamic pages of the startup's web platform using Next.js, React, TypeScript, and Tailwind CSS.
+- Integrated third-party and internal REST APIs, handling edge cases and loading states for a smooth cross-device UX.
+- Collaborated with the founding team on product features and frontend architecture decisions.
+
+## Project Portfolio
+
+All projects: https://github.com/r2hu1 (pinned repositories are also fetched live via GitHub GraphQL on the portfolio).
+
+### Featured Projects
+
+- **Border Code - AI Coding Agent CLI** — Free open-source on-device coding agent that runs entirely in your terminal. TypeScript, Node.js, AI Agent, CLI, Gemini, Claude. https://github.com/r2hu1/border-code
+- **Bud - AI Powered CLI Companion** — AI-powered CLI that converts natural language into real shell commands with context awareness and safety checks. TypeScript, Node.js. https://github.com/r2hu1/bud
+- **Gluer - Meeting Scheduler & Monetization** — Integrated platform for scheduling meetings, managing links, and handling free/paid bookings without manual invoicing. Next.js, React, Drizzle ORM, PostgreSQL, Stripe. https://gluer.space
+- **Cavio - AI-Integrated Writing App** — Notion-inspired writing platform with AI autocomplete and an integrated writing assistant. Next.js, tRPC, Drizzle ORM, PostgreSQL, Gemini AI. https://cavio.vercel.app/home
+- **Ration - Encrypted Env Variable Manager** — Secure cloud platform for storing, syncing, and managing environment variables across projects and teams with AES-256 enterprise-grade encryption. Next.js, React, PostgreSQL, Node.js. https://rration.vercel.app
+- **My Socials - Social Link Aggregator** — Link-in-bio tool that consolidates social profiles and content into a single shareable page. Next.js, React, Tailwind CSS. https://mysocialz.vercel.app
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router), React 19
+- **Language:** TypeScript 5.9
+- **Styling:** Tailwind CSS v4 (dark-only design, oklch colors, @theme inline, light/dark theme vars)
+- **Animations:** Framer Motion (layout animations, AnimatePresence, shared layoutId)
+- **UI:** shadcn/ui primitives via radix-ui maia style (Button, Card, Skeleton, Sonner, Tooltip, Drawer, DropdownMenu, HoverCard, ScrollArea)
+- **Icons:** lucide-react, react-icons
+- **Fonts:** Figtree (sans), Geist
+- **Package Manager:** pnpm / bun
+- **Deployment:** Vercel (with @vercel/analytics)
+- **Edge:** GitHub GraphQL API proxies (contributions heatmap, pinned repos)
+
+## Portfolio Features
+
+- **Animated Preloader** — Fullscreen avatar pulse with spring transition via shared layoutId into header
+- **GitHub Contribution Heatmap** — Live contribution calendar from GitHub GraphQL API, memoized cells, scrollable on mobile
+- **Live Pinned Repos** — Fetches pinned repositories in real-time via GitHub GraphQL proxy
+- **Featured Projects** — Border Code, Bud, Gluer, Cavio, Ration, My Socials
+- **Work Timeline** — Accordion-style experience timeline with Framer Motion expand/collapse
+- **Force Dark Mode** — Dark-only design with subtle radial gradient overlay (#000 to rgb(103,84,189))
+- **AI/LLM Friendly** — llm.txt served from /llm.txt, listed in robots.txt & sitemap, hinted via sr-only in layout
+- **Socials** — GitHub, LinkedIn, Twitter, Discord, Instagram, Email (icon dropdown in header)
+- **SEO** — Metadata, Open Graph image (1200x630), sitemap.xml, robots.txt, semantic section IDs (about, experience, projects)
+
+## Development Philosophy
+
+- Writing code that doesn't break in production
+- Building systems that scale when needed
+- Creating clean interfaces without unnecessary complexity
+- Maintaining straightforward, well-documented APIs
+- Establishing stable backend foundations
+- Minimalism — removing unused dependencies and components aggressively
+
+## What I Can Help With
+
+- Full-stack web application development (Next.js, React, TypeScript)
+- Backend architecture and API design
+- Microservices infrastructure
+- Monorepo architecture and end-to-end type safety
+- Frontend development and UI implementation with Tailwind CSS
+- System scalability and reliability
+- Open-source project development and contribution
+- Technical consultation and code review
+- Clean, minimal deployment pipelines (Vercel, pnpm)
+
+## Open Source
+
+The portfolio site itself is fully open-source and maintained on GitHub: https://github.com/r2hu1. Contributions are welcome.
+
+---
+
+*Last updated: August 2026*
