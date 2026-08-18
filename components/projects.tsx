@@ -50,7 +50,7 @@ export function Projects() {
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-sm text-foreground tracking-wider">Projects</h2>
+            <h2 className="text-sm text-foreground tracking-wider">Public Projects</h2>
             <p className="text-xs text-foreground/60 mt-1">
               My projects, feeding live from git pin.
             </p>
