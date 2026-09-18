@@ -66,7 +66,7 @@ export function Hero() {
 
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <Button variant="default" asChild>
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/Mrigaank Sharma.pdf" target="_blank" rel="noopener noreferrer">
               View Resume <ArrowUpRight className="size-3.5" />
             </Link>
           </Button>
