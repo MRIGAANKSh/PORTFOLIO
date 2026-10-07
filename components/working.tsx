@@ -22,7 +22,7 @@ const experienceData= [
     title: "Full Stack Developer Intern",
     location: "India",
     type: "Remote",
-    period: "May 2026 – Aug 2026",
+    period: "May 2026 – Sep 2026",
     bullets: [
       "Collaborated on the design and development of a full-stack Enterprise Resource Planning (ERP) platform tailored for academic lecture management, optimizing system performance to improve load times by 18%.",
       "Integrated robust RESTful APIs into the core architecture to ensure reliable data orchestration, seamless backend-to-frontend communication, and a uniform user experience across device ecosystems.",
