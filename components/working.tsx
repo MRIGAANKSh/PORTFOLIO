@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, BriefcaseBusiness } from "lucide-react";
 import { LyseibugIcon } from "./icons/lyseibug";
-
+import { BrainCircuit } from "lucide-react";
 interface RoleDetails {
   title: string;
   company: string;
@@ -16,7 +16,8 @@ interface RoleDetails {
 }
 
 
-const experienceData= [
+
+const experienceData = [
   {
     company: "Lyseibug",
     title: "Full Stack Developer Intern",
@@ -24,11 +25,26 @@ const experienceData= [
     type: "Remote",
     period: "May 2026 – Sep 2026",
     bullets: [
-      "Collaborated on the design and development of a full-stack Enterprise Resource Planning (ERP) platform tailored for academic lecture management, optimizing system performance to improve load times by 18%.",
-      "Integrated robust RESTful APIs into the core architecture to ensure reliable data orchestration, seamless backend-to-frontend communication, and a uniform user experience across device ecosystems.",
-      "Analyzed complex user interaction patterns across different institutional roles to apply iterative UI/UX enhancements, resulting in a 25% increase in user engagement and streamlined administrative usability.",
+      "Improved the load time of an academic lecture ERP platform by 18% using Next.js, Node.js, database indexing, API caching, and frontend optimization.",
+      "Developed RESTful APIs to ensure reliable data flow and seamless communication between frontend and backend services.",
+      "Analyzed user interactions and implemented UI/UX improvements, increasing user engagement by 25%."
     ],
     icon: LyseibugIcon,
+  },
+  {
+    company: "Global Infoventures Pvt. Ltd.",
+    title: "AI/ML Trainee",
+    location: "India",
+    type: "Onsite",
+    period: "Sep 2025 – Apr 2026",
+    bullets: [
+      "Prepared and annotated image datasets for deep learning and computer vision workflows.",
+      "Executed model training experiments using Kubeflow Pipelines on NVIDIA DGX GPU servers.",
+      "Built end-to-end AI/ML pipelines for data preprocessing, model training, evaluation, and experiment tracking.",
+      "Developed RAG-based applications using LangChain, implementing document processing, embeddings, vector search, and LLM generation.",
+      "Assisted with automated model deployment, model evaluation, and GPU-based training workflows."
+    ],
+    icon: BrainCircuit,
   },
   {
     company: "Freelancer",
@@ -38,12 +54,13 @@ const experienceData= [
     period: "May 2025 – May 2026",
     bullets: [
       "Developed and maintained full-stack web applications using modern frontend and backend technologies.",
-      "Built RESTful APIs and integrated frontend interfaces to deliver reliable and responsive application workflows.",
-      "Collaborated on application architecture, debugging, performance optimization, and feature development across the software lifecycle.",
+      "Built RESTful APIs and integrated frontend interfaces to deliver reliable, responsive application workflows.",
+      "Worked on application architecture, debugging, performance optimization, and feature development throughout the software development lifecycle."
     ],
     icon: BriefcaseBusiness,
   },
 ];
+
 
 
 export default function WorkingExperience() {
